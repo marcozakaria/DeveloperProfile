@@ -68,6 +68,8 @@ a.btn-cta-primary, .btn-cta-primary {
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
+  position: relative;
+  
 }
 
 a.btn-cta-primary:hover, .btn-cta-primary:hover {
@@ -144,6 +146,7 @@ a.dotted-link:hover {
   margin-bottom: 5px;
   margin-top: 30px;
   z-index: 1;
+  position: relative;
 }
 
 .header .profile-content .desc {
@@ -154,6 +157,7 @@ a.dotted-link:hover {
   margin-top: 0;
   margin-bottom: 15px;
   z-index: 1;
+  position: relative;
 }
 
 .header .profile-content .social a {
@@ -172,6 +176,7 @@ a.dotted-link:hover {
   color: #fff;
   text-align: center;
   z-index: 1;
+  position: relative;
 }
 
 .header .profile-content .social a:hover {
@@ -658,7 +663,8 @@ a.dotted-link:hover {
   .header .profile-image {
     float: none !important;
     margin: 0 auto;
-    z-index: 1;
+    position: relative;
+    z-index: 2;
   }
   .header .profile-content {
     float: none !important;
