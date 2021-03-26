@@ -8,7 +8,7 @@ for (let i = 0; i < numBalls; i++) {
   let ball = document.createElement("div");
   ball.classList.add("ball");
   ball.style.background = colors[Math.floor(Math.random() * colors.length)];
-  ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+  ball.style.left = `${Math.floor(Math.random() * 75)}vw`;
   ball.style.top = `${Math.floor(Math.random() * 200)}vh`;
   ball.style.transform = `scale(${Math.random()})`;
   ball.style.width = `${Math.random()}em`;
