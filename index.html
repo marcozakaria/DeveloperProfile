@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="TestAnimation/animationcss.css">  
 
     <link rel="stylesheet" href="TestAnimation/animationDots.css">  
-	<script defer src="TestAnimation/Animation2.js"></script>
+	<script defer src="TestAnimationAnimation2.js"></script>
     
     <!-- github calendar css -->
     <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
@@ -222,16 +222,49 @@
                 <section class="github section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">My GitHub</h2>
-                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
-                        
-                        <div id="github-graph" class="github-graph">
+                        <!--<p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. -->
+                        <!-- Include the library. OF GIT HUB ACTIVITY -->
+                       <div> 
+                           <script
+                              src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+                            ></script>
+
+                            <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+                            <link
+                               rel="stylesheet"
+                               href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+                            />
+
+                            <!-- Prepare a container for your calendar. -->
+                            <div class="calendar">
+                                <!-- Loading stuff -->
+                                Loading the data just for you.
+                            </div>
+
+                            <script>
+                                GitHubCalendar(".calendar", "marcozakaria");
+                                // or enable responsive functionality
+                                GitHubCalendar(".calendar", "marcozakaria", { responsive: true });
+                            </script>
+                            <div id="github-graph" class="github-graph">
+                        </div>
 
                         </div><!--//github-graph-->
 
-                        <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://github.com/caseyscarborough/github-activity" target="_blank">GitHub Activity Stream</a> widget.        
-                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->                       
-                        <div id="ghfeed" class="ghfeed">
-                        </div><!--//ghfeed-->
+                        <div id="feed">
+                            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+                            <link rel="stylesheet" href="gitGraph/github-activity-0.1.5.min.css">
+
+                            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+                            <script type="text/javascript" src="gitGraph/github-activity-0.1.5.min.js"></script>
+                           <script>
+                                GitHubActivity.feed({
+	                            username: "marcozakaria",
+	                            repository: "your-repo", // optional
+	                            selector: "#feed",
+	                            limit: 20 // optional
+                            });</script>
+                        <!div>
                         
                     </div><!--//secton-inner-->
                 </section><!--//section-->
