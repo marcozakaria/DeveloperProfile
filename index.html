@@ -19,10 +19,10 @@
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css"> 
     <!-- Animation -->
-    <link rel="stylesheet" href="TestAnimation/animationcss.css">  
-
+    <!--<link rel="stylesheet" href="TestAnimation/animationcss.css">  -->
+    <script defer src="TestAnimation/DotsMeshAnimation.js"></script>
     <link rel="stylesheet" href="TestAnimation/animationDots.css">  
-	<script defer src="TestAnimationAnimation2.js"></script>
+	<script defer src="TestAnimation/Animation2.js"></script>
     
     <!-- github calendar css -->
     <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
@@ -38,23 +38,16 @@
 <body>
     <!-- ******HEADER****** --> 
     <div class="background">
+ 
     <header class="header">
+         <canvas class="canvas" id="canvas" width="200" height="200" style=" position: absolute; z-index: 0;"></canvas>
         <div class="container clearfix"> 
-        
         <!-- Background & animion & navbar & title -->
-          <div class="container-fluid">
-        <!-- Background animtion-->
-            
-               <div class="cube"></div>
-               <div class="cube"></div>
-               <div class="cube"></div>
-               <div class="cube"></div>
-              <div class="cube"></div>
-              <div class="cube"></div>
-           
-
-            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/profile.png" alt="profile image" />
+          
+                    
+            <img class="profile-image img-fluid float-left rounded-circle" style="z-index: 0;" src="assets/images/profile.png" alt="profile image" />
             <div class="profile-content float-left">
+ 
                 <h1 class="name">Marco Zakaria</h1>
                 <h2 class="desc">Unity Game Developer</h2>   
                 <ul class="social list-inline">
@@ -64,11 +57,12 @@
                     <li class="list-inline-item"><a href="https://play.google.com/store/apps/developer?id=705+Games&hl=en_US&gl=US"><i class="fab fa-android"></i></a></li>   
                     <li class="list-inline-item last-item"><a href="https://sketchfab.com/marcoZakaria"><i class="fab fa-codepen"></i></a></li>                
                 </ul> 
+              
             </div><!--//profile-->
             <a class="btn btn-cta-primary float-right" href="https://github.com/marcozakaria" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>              
-        </div><!--//container-->
          
     </header><!--//header-->
+
     </div><!--Animation-->
     
     <div class="container sections-wrapper">
