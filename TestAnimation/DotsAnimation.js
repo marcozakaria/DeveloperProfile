@@ -1,6 +1,6 @@
 let resizeReset = function() {
-	w = canvasBody.width = 250;
-	h = canvasBody.height = 50;
+	w = canvasBody.width = window.innerWidth;
+	h = canvasBody.height = window.innerHeight;
 }
 
 const opts = { 
