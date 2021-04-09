@@ -2673,6 +2673,11 @@ input[type="button"].btn--primary:focus {
     width: 95%;
 }
 
+.skill-bars-fat li .percent98::before {
+    width: 98%;
+}
+
+
 .skill-bars-fat li .percent100::before {
     width: 100%;
 }
@@ -3796,6 +3801,10 @@ input[type="button"].btn--primary:focus {
 
 .s-about__content-bottom {
     margin-top: var(--vspace-2);
+}
+
+.Github_SectionActivity{
+    text-align: center;
 }
 
 .s-about__content-bottom a {
