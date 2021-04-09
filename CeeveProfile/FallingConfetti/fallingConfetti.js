@@ -53,7 +53,7 @@
     constructor() {
       this.style = COLORS[~~range(0, 5)];
       this.rgb = `rgba(${this.style[0]},${this.style[1]},${this.style[2]}`;
-      this.r = ~~range(2, 6);
+      this.r = ~~range(4, 8);
       this.r2 = 2 * this.r;
       this.replace();
     }
